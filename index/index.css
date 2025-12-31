@@ -48,20 +48,24 @@ img{
     place-items: center;
     margin-inline:1.5rem ;
     padding-block:5rem;
+    
+
 }
 .card__container{
     display: grid;
     row-gap: 3.5rem;
+
 }
 .card__article{
     position: relative;
     overflow: hidden;
+   
 }
 
 .card__img {
     width: 328px;
     border-radius: 1.5rem;
-
+    min-height: 450px;
 }
 
 .card__data{
@@ -74,6 +78,7 @@ img{
     bottom: -9rem;
     left: 0;
     right: 0;
+    
     margin-inline: auto;
     opacity: 0;
     transition: opacity 1s 1s;}
@@ -167,6 +172,7 @@ transition: opacity .3s;
     .card__container {
        grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
+    row-gap: 4rem;
     }
     .card__data{
         width: 250px;
@@ -176,7 +182,7 @@ transition: opacity .3s;
 }
 @media screen and (min-width: 1120px) {
     .container2 {
-     height: 100vh;
+     min-height: 100vh;
     }
     .card__container{
       grid-template-columns: repeat(3, 1fr);
